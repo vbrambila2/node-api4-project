@@ -22,7 +22,7 @@ const users = [
 ]
 
 server.get('/', (req, res) => {
-    res.json({ MESSAGE: process.env.MESSAGE });
+    res.json({ MESSAGE: process.env.MESSAGE, INSTRUCTIONS: process.env.INSTRUCTIONS });
 });
 
 server.get('/api/users', (req, res) => {
